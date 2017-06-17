@@ -1,18 +1,19 @@
 @extends('header')
 
-@section('title','清单管理')
+@section('title','出库记录')
 
 @section('content')
 	<div>
-		<span class="title">清单管理</span>
+		<span class="title">出库记录</span>
 	</div>
 	<div class="index-search">
 		<form class="form-inline">
 			<div class="form-group">
 				<select class="form-control input-200">
-					<option>名称</option>
-					<option>规格</option>
+					<option>时间</option>
+					<option>操作人</option>
 					<option>数量</option>
+					<option>名称</option>
 				</select>
 				<input type="text" class="form-control input-200">
 				<button type="submit" class="btn btn-primary">搜索</button>
@@ -24,41 +25,57 @@
 			<tr class="info">
 				<th class="text-center">名称</th>
 				<th class="text-center">规格</th>
-				<th class="text-center">操作</th>
+				<th class="text-center">备注</th>
+				<th class="text-center">库存量</th>
+				<th class="text-center">出库数量</th>
+				<th class="text-center">出库时间</th>
+				<th class="text-center">操作人</th>
 			</tr>
 			<tr class="text-center">
 				<td>bbb</td>
 				<td>bbb</td>
-				<td>
-					<button class="btn btn-primary">修改</button>
-					<button class="btn btn-danger">删除</button>
-				</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
 			</tr>
 			<tr class="text-center">
 				<td>bbb</td>
 				<td>bbb</td>
-				<td>
-					<button class="btn btn-primary">修改</button>
-					<button class="btn btn-danger">删除</button>
-				</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
 			</tr>
 			<tr class="text-center">
 				<td>bbb</td>
 				<td>bbb</td>
-				<td>
-					<button class="btn btn-primary">修改</button>
-					<button class="btn btn-danger">删除</button>
-				</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
 			</tr>
 			<tr class="text-center">
 				<td>bbb</td>
 				<td>bbb</td>
-				<td>
-					<button class="btn btn-primary">修改</button>
-					<button class="btn btn-danger">删除</button>
-				</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
 			</tr>
-
+			<tr class="text-center">
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+				<td>bbb</td>
+			</tr>
 		</table>
 		<nav aria-label="Page navigation" class="page-style">
 		  <ul class="pagination">
@@ -82,6 +99,6 @@
 	</div>
 	<div></div>
 	<div class="index-footer">
-		<a class="btn btn-info" href="">添加</a>
+		<button class="btn btn-danger" onclick="history.go(-1)">返回</button>
 	</div>
 @endsection

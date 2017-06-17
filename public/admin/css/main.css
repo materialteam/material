@@ -1,0 +1,41 @@
+.input-200{
+	width: 200px;
+}
+.input-80{
+	width: 80px;
+}
+.input-inline{
+	display: inline;
+}
+.table-input{
+	width:80px;
+	height:30px;
+	margin:0px auto
+}
+
+.title{
+	margin-bottom: 20px;
+	display: block;
+	width: 120px;
+	line-height: 40px;
+	height: 40px;
+	background: rgb(240,173,78);
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+
+/* /warehouse/index  */
+.index-footer{
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+.page-style{
+	float: right;
+	margin-right: 50px;
+}
+.index-lists{
+	margin-top: 20px;
+	overflow: hidden;
+}

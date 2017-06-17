@@ -32,7 +32,10 @@ Route::group(['middleware' => 'web','prefix'=>'warehouse'], function () {
     Route::get('/storage','admin\WarehouseController@storage');
 
     //仓库入库记录
-    Route::get('/record','admin\WarehouseController@record');
+    Route::get('/inRecord','admin\WarehouseController@inRecord');
+
+    //仓库出库记录
+    Route::get('/outRecord','admin\WarehouseController@outRecord');
 });
 
 //角色路由群组

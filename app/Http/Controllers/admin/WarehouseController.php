@@ -39,8 +39,16 @@ class WarehouseController extends Controller
      * 仓库入库记录
      * @return [type] [description]
      */
-    public function record(){
-    	return view('warehouse.record');
+    public function inRecord(){
+    	return view('warehouse.inRecord');
+    }
+
+    /**
+     * 仓库出库记录
+     * @return [type] [description]
+     */
+    public function outRecord(){
+        return view('warehouse.outRecord');
     }
 
 }
