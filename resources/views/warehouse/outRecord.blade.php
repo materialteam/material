@@ -10,10 +10,12 @@
 		<form class="form-inline">
 			<div class="form-group">
 				<select class="form-control input-200">
-					<option>时间</option>
+					<option>材料/设备</option>
+					<option>型号</option>
+					<option>单位</option>
+					<option>单站点数量</option>
+					<option>备注</option>
 					<option>操作人</option>
-					<option>数量</option>
-					<option>名称</option>
 				</select>
 				<input type="text" class="form-control input-200">
 				<button type="submit" class="btn btn-primary">搜索</button>
@@ -23,58 +25,58 @@
 	<div class="index-lists">
 		<table class="table table-hover">
 			<tr class="info">
-				<th class="text-center">名称</th>
-				<th class="text-center">规格</th>
-				<th class="text-center">备注</th>
-				<th class="text-center">库存量</th>
-				<th class="text-center">出库数量</th>
-				<th class="text-center">出库时间</th>
+				<th class="text-center">序号</th>
+				<th class="text-center">材料/设备</th>
+				<th class="text-center">型号</th>
+				<th class="text-center">单位</th>
+				<th class="text-center">入库数量</th>
+				<th class="text-center">操作时间</th>
 				<th class="text-center">操作人</th>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>1</td>
+				<td>GSM 6601 MU</td>
+				<td>爱立信 900频段</td>
+				<td>台</td>
+				<td>100</td>
+				<td>2017-6-18 12:24:20</td>
+				<td>管理员</td>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>2</td>
+				<td>GSM 6601 RRU</td>
+				<td>爱立信 900频段</td>
+				<td>台</td>
+				<td>100</td>
+				<td>2017-6-18 12:24:20</td>
+				<td>管理员</td>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>3</td>
+				<td>BPN2板</td>
+				<td>中兴</td>
+				<td>块</td>
+				<td>100</td>
+				<td>2017-6-18 12:24:20</td>
+				<td>管理员</td>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>4</td>
+				<td>LTE E频段 RRU</td>
+				<td>中兴 E频段</td>
+				<td>台</td>
+				<td>100</td>
+				<td>2017-6-18 12:24:20</td>
+				<td>管理员</td>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>5</td>
+				<td>LTE F频段 RRU</td>
+				<td>中兴 F频段</td>
+				<td>台</td>
+				<td>100</td>
+				<td>2017-6-18 12:24:20</td>
+				<td>管理员</td>
 			</tr>
 		</table>
 		<nav aria-label="Page navigation" class="page-style">
@@ -99,6 +101,7 @@
 	</div>
 	<div></div>
 	<div class="index-footer">
+		<button class="btn btn-info">导出Excel</button>
 		<button class="btn btn-danger" onclick="history.go(-1)">返回</button>
 	</div>
 @endsection

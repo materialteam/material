@@ -10,58 +10,97 @@
 		<form class="form-inline">
 			<div class="form-group">
 				<select class="form-control input-200">
-					<option>名称</option>
-					<option>规格</option>
-					<option>数量</option>
+					<option>材料/设备</option>
+					<option>型号</option>
+					<option>单位</option>
+					<option>单站点数量</option>
+					<option>备注</option>
 				</select>
 				<input type="text" class="form-control input-200">
 				<button type="submit" class="btn btn-primary">搜索</button>
+
+				<a href="#" style="margin-left:300px" class="btn btn-danger">操作日志</a>
+				<a href="{{ asset('/warehouse/inRecord') }}" style="margin-left:50px" class="btn btn-info">入库记录</a>
+				<a href="{{ asset('/warehouse/outRecord') }}" style="margin-left:50px" class="btn btn-warning">出库记录</a>
 			</div>
 		</form>
 	</div>
 	<div class="index-lists">
 		<table class="table table-hover">
 			<tr class="info">
-				<th class="text-center">名称</th>
-				<th class="text-center">规格</th>
+				<th class="text-center">序号</th>
+				<th class="text-center">材料/设备</th>
+				<th class="text-center">型号</th>
+				<th class="text-center">单位</th>
+				<th class="text-center">单站点数量</th>
 				<th class="text-center">库存量</th>
 				<th class="text-center">备注</th>
-				<th class="text-center">修改时间</th>
+				<th class="text-center">操作</th>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>1</td>
+				<td>GSM 6601 MU</td>
+				<td>爱立信 900频段</td>
+				<td>台</td>
+				<td>1</td>
+				<td>10</td>
+				<td>甲供</td>
+				<td>
+					<button class="btn btn-primary">修改</button>
+					<button class="btn btn-danger">删除</button>
+				</td>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>2</td>
+				<td>GSM 6601 RRU</td>
+				<td>爱立信 900频段</td>
+				<td>台</td>
+				<td>1</td>
+				<td>10</td>
+				<td>甲供</td>
+				<td>
+					<button class="btn btn-primary">修改</button>
+					<button class="btn btn-danger">删除</button>
+				</td>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>3</td>
+				<td>BPN2板</td>
+				<td>中兴</td>
+				<td>块</td>
+				<td>1</td>
+				<td>10</td>
+				<td>甲供</td>
+				<td>
+					<button class="btn btn-primary">修改</button>
+					<button class="btn btn-danger">删除</button>
+				</td>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>4</td>
+				<td>LTE E频段 RRU</td>
+				<td>中兴 E频段</td>
+				<td>台</td>
+				<td>1</td>
+				<td>10</td>
+				<td>甲供</td>
+				<td>
+					<button class="btn btn-primary">修改</button>
+					<button class="btn btn-danger">删除</button>
+				</td>
 			</tr>
 			<tr class="text-center">
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
-				<td>bbb</td>
+				<td>5</td>
+				<td>LTE F频段 RRU</td>
+				<td>中兴 F频段</td>
+				<td>台</td>
+				<td>1</td>
+				<td>10</td>
+				<td>甲供</td>
+				<td>
+					<button class="btn btn-primary">修改</button>
+					<button class="btn btn-danger">删除</button>
+				</td>
 			</tr>
 		</table>
 		<nav aria-label="Page navigation" class="page-style">

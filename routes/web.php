@@ -16,7 +16,7 @@ Route::get('/login',function(){
 });
 
 Route::get('/',function(){
-	return view('index');
+	return view('warehouse.index');
 });
 
 //仓库路由群组
@@ -36,6 +36,22 @@ Route::group(['middleware' => 'web','prefix'=>'warehouse'], function () {
 
     //仓库出库记录
     Route::get('/outRecord','admin\WarehouseController@outRecord');
+});
+
+//站点路由群组
+Route::group(['middleware' => 'web','prefix'=>'site'],function(){
+    
+    //站点清单查看修改
+    Route::get('/index','admin\SiteController@index');
+
+    //站点清单上传
+    Route::get('/import','admin\SiteController@import');
+
+    //站点操作记录
+    Route::get('/record','admin\SiteController@record');
+
+    //站点列表管理
+    Route::get('/manage','admin\SiteController@manage');
 });
 
 //角色路由群组

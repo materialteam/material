@@ -1,26 +1,22 @@
 @extends('header')
 
-@section('title','入库记录')
+@section('title','操作记录')
 
 @section('content')
 	<div>
-		<span class="title">入库记录</span>
+		<span class="title">操作记录</span>
 	</div>
 	<div class="index-search">
 		<form class="form-inline">
 			<div class="form-group">
 				<select class="form-control input-200">
-					<option>材料/设备</option>
-					<option>型号</option>
-					<option>单位</option>
-					<option>单站点数量</option>
-					<option>备注</option>
+					<option>时间</option>
 					<option>操作人</option>
+					<option>数量</option>
+					<option>名称</option>
 				</select>
 				<input type="text" class="form-control input-200">
 				<button type="submit" class="btn btn-primary">搜索</button>
-
-
 			</div>
 		</form>
 	</div>
@@ -28,56 +24,42 @@
 		<table class="table table-hover">
 			<tr class="info">
 				<th class="text-center">序号</th>
-				<th class="text-center">材料/设备</th>
-				<th class="text-center">型号</th>
-				<th class="text-center">单位</th>
-				<th class="text-center">入库数量</th>
+				<th class="text-center">操作类型</th>
+				<th class="text-center">备注</th>
+				<th class="text-center">操作内容</th>
 				<th class="text-center">操作时间</th>
 				<th class="text-center">操作人</th>
 			</tr>
 			<tr class="text-center">
 				<td>1</td>
-				<td>GSM 6601 MU</td>
-				<td>爱立信 900频段</td>
-				<td>台</td>
-				<td>100</td>
-				<td>2017-6-18 12:24:20</td>
+				<td>上传</td>
+				<td>无</td>
+				<td>上传天河客运站物资清单</td>
+				<td>2017-6-18 10:40:20</td>
 				<td>管理员</td>
 			</tr>
 			<tr class="text-center">
 				<td>2</td>
-				<td>GSM 6601 RRU</td>
-				<td>爱立信 900频段</td>
-				<td>台</td>
-				<td>100</td>
-				<td>2017-6-18 12:24:20</td>
-				<td>管理员</td>
+				<td>申请审核</td>
+				<td>无</td>
+				<td>申请天河客运站物资清单审核</td>
+				<td>2017-6-18 12:40:20</td>
+				<td>施工队</td>
 			</tr>
 			<tr class="text-center">
 				<td>3</td>
-				<td>BPN2板</td>
-				<td>中兴</td>
-				<td>块</td>
-				<td>100</td>
-				<td>2017-6-18 12:24:20</td>
-				<td>管理员</td>
+				<td>导出文件</td>
+				<td>无</td>
+				<td>导出天河客运站物资清单文件</td>
+				<td>2017-6-18 13:40:20</td>
+				<td>施工队</td>
 			</tr>
 			<tr class="text-center">
 				<td>4</td>
-				<td>LTE E频段 RRU</td>
-				<td>中兴 E频段</td>
-				<td>台</td>
-				<td>100</td>
-				<td>2017-6-18 12:24:20</td>
-				<td>管理员</td>
-			</tr>
-			<tr class="text-center">
-				<td>5</td>
-				<td>LTE F频段 RRU</td>
-				<td>中兴 F频段</td>
-				<td>台</td>
-				<td>100</td>
-				<td>2017-6-18 12:24:20</td>
+				<td>查看</td>
+				<td>无</td>
+				<td>查看六号线物资清单</td>
+				<td>2017-6-18 12:50:20</td>
 				<td>管理员</td>
 			</tr>
 		</table>

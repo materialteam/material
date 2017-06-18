@@ -12,40 +12,41 @@
 <body>
 <div class="wrap">
 	<div class="nav">
-		<ul>
-			<li>智能物资管理系统</li>
-			<li class="firstMenu">
-				<a href="{{ asset('/warehouse/index') }}">仓库</a>
-				<ul>
-					<li><a href="{{ asset('/warehouse/index') }}">库存量</a></li>
-					<li><a href="{{ asset('/warehouse/storage') }}">入库</a></li>
-					<li><a href="{{ asset('/warehouse/lists') }}">清单管理</a></li>
-					<li><a href="{{ asset('/warehouse/inRecord') }}">入库记录</a></li>
-					<li><a href="{{ asset('/warehouse/outRecord') }}">出库记录</a></li>
-				</ul>
-			</li>
+			<ul>
+				<li><a style="width:200px;color:#fff;background:#ffcc66;font-size:20px">智能物资管理系统</a></li>
+				<li class="firstMenu">
+					<a href="{{ asset('/warehouse/index') }}">仓库</a>
+					<ul>
+						<li><a href="{{ asset('/warehouse/index') }}">库存量</a></li>
+						<li><a href="{{ asset('/warehouse/storage') }}">入库</a></li>
+						<li><a href="{{ asset('/warehouse/lists') }}">清单管理</a></li>
+						<li><a href="{{ asset('/warehouse/inRecord') }}">入库记录</a></li>
+						<li><a href="{{ asset('/warehouse/outRecord') }}">出库记录</a></li>
+					</ul>
+				</li>
 
-			<li class="firstMenu">
-				<a href="#">站点</a>
-				<ul>
-					<li><a href="#">物资上传</a></li>
-					<li><a href="#">查看</a></li>
-					<li><a href="#">操作记录</a></li>
-					<li><a href="#">管理</a></li>
-				</ul>
-			</li>
+				<li class="firstMenu">
+					<a href="#">站点</a>
+					<ul>
+						<li><a href="{{ asset('/site/index') }}">查看</a></li>
+						<li><a href="{{ asset('/site/import') }}">清单上传</a></li>
+						<li><a href="{{ asset('/site/record') }}">操作记录</a></li>
+						<li><a href="#">管理</a></li>
+					</ul>
+				</li>
 
-			<li class="firstMenu">
-				<a href="#">账号</a>
-				<ul>
-					<li><a href="#">管理</a></li>
-					<li><a href="#">权限</a></li>
-					<li><a href="#">修改密码</a></li>
-					<li><a href="#">退出</a></li>
-				</ul>
-			</li>
-			
-		</ul>
+				<li class="firstMenu">
+					<a href="#">账号</a>
+					<ul>
+						<li><a href="#">管理</a></li>
+						<li><a href="#">权限</a></li>
+						<li><a href="#">审核</a></li>
+						<li><a href="#">修改密码</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</li>
+				
+			</ul>
 	</div>
 	<div class="content">
 		@yield('content')
